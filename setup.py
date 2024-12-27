@@ -54,7 +54,9 @@ setuptools.setup(
     long_description=open(r'readme.md', encoding='utf-8').read(),  # 读取readme自述文件
     long_description_content_type="text/markdown",
     url="https://github.com/yanjlee/chatgpt-on-wechat",  # 模块github地址
-    project_urls.Source="https://github.com/yanjlee/chatgpt-on-wechat",  # 模块github地址
+    project_urls={
+        "Source": "https://github.com/yanjlee/chatgpt-on-wechat",  # 模块源码地址
+    },
     packages=setuptools.find_packages(),     # 自动列出项目下的包
     classifiers=[
         "Programming Language :: Python :: 3",
